@@ -37,6 +37,15 @@
         android:text="Top Cusine"
         android:textSize="24sp">
 
+
+    </TextView>
+    <TextView
+        android:id="@+id/about"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Uttrakhand ">
+
     </TextView>
 
 </LinearLayout>

@@ -48,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(newIntent);
             }
         });
+        TextView aboutTexView =findViewById(R.id.about);
+        aboutTexView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent newIntent=new Intent(MainActivity.this,About.class);
+                startActivity(newIntent);
+
+            }
+        });
     }
 }
 
