@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Land Of Gods</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hill_station"> Stations</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="trek_adventure">Adventure  </string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="top_cusine">Top Cusine </string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="pilgrimages">Pilgrimages</string>
 </resources>

@@ -1,11 +1,14 @@
 package com.example.landofgods;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,49 +17,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView hillTextView = findViewById(R.id.hillstation);
-        hillTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent newIntent=new Intent(MainActivity.this,HillStations.class);
-                startActivity(newIntent);
-            }
-        });
-        TextView trekTextView=findViewById(R.id.trek);
-        trekTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    Intent newIntent=new Intent(MainActivity.this,TrekAndAdventure.class);
-                    startActivity(newIntent);
-            }
-        });
-        TextView pilgrimageTextView=findViewById(R.id.pilgrimages);
-        pilgrimageTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent newIntent=new Intent(MainActivity.this,Pilgrimages.class);
-                startActivity(newIntent);
-            }
-        });
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
+        // Create an adapter that knows which fragment should be shown on each page
 
-        TextView cusineTextView=findViewById(R.id.cusine);
-        cusineTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent newIntent=new Intent(MainActivity.this,TopCusine.class);
-                startActivity(newIntent);
-            }
-        });
-        TextView aboutTexView =findViewById(R.id.about);
-        aboutTexView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent newIntent=new Intent(MainActivity.this,About.class);
-                startActivity(newIntent);
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
+        TabLayout tabLayout=findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
-            }
-        });
     }
 }
 

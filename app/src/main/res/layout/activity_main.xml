@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical" >
-    <TextView
-        android:id="@+id/hillstation"
-        android:layout_width="wrap_content"
+
+
+    android:orientation="vertical"
+    >
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hill Stations"
-        android:textSize="24sp">
+        tools:text="tabs"
+        android:background="#4CAF50">
 
-    </TextView>
-    <TextView
-        android:id="@+id/trek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trek And Other Adventures"
-        android:textSize="24sp">
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
 
-    </TextView>
-
-    <TextView
-        android:id="@+id/pilgrimages"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pilgrimages"
-        android:textSize="24sp">
-
-    </TextView>
-    <TextView
-        android:id="@+id/cusine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Top Cusine"
-        android:textSize="24sp">
-
-
-    </TextView>
-    <TextView
-        android:id="@+id/about"
-        android:textSize="24sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="About Uttrakhand ">
-
-    </TextView>
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:text="viewpager"/>
 
 </LinearLayout>

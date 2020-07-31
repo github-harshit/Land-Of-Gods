@@ -9,20 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".About"
-            android:label="Uttarakhand(Simply Heaven)  "></activity>
-        <activity
-            android:name=".Pilgrimages"
-            android:label="Pilgrimages" />
-        <activity
-            android:name=".HillStations"
-            android:label="Hill Stations" />
-        <activity
-            android:name=".TrekAndAdventure"
-            android:label="Trek And Adventure " />
-        <activity
-            android:name=".TopCusine"
-            android:label="Top Cusine " />
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
