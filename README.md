@@ -1,6 +1,6 @@
 # Tour Guide App
 
-# Udacity Google Android Basic Nanoodegree
+# Udacity Google Android Basic Nanodegree
 
 ## Land Of Gods
 
